@@ -1,13 +1,30 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
     "module": "esnext",
+    "paths": {
+      "@start/*": [
+        "app/start-up/*"
+      ],
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@user/*": [
+        "app/users-module/*"
+      ],
+      "@env/*": [
+        "environments/*"
+      ],
+      "core-js/es7/reflect": [
+        "node_modules/core-js/proposals/reflect-metadata"
+    ]
+    }, 
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",

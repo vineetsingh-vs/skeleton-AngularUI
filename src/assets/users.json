@@ -1,0 +1,82 @@
+[
+    {
+      "id": 1,
+      "name": "Vineet Singh",
+      "email": "vinsin@rajput.com",
+      "company": {
+        "name": "Qualcomm-Inc"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Abhishek Kumar",
+      "email": "abikum@rajput.com",
+      "company": {
+        "name": "Orange"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Avinash Pandey",
+      "email": "avipan@rajput.com",
+      "company": {
+        "name": "Accenture"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Pushpendra Singh",
+      "email": "pusin@rajput.com",
+      "company": {
+        "name": "HCL"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Hukum Singh Gurjar",
+      "email": "huksin@rajput.com",
+      "company": {
+        "name": "TCS"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Shubham Aggarwal",
+      "email": "shuagg@rajput.com",
+      "company": {
+        "name": "TCS"
+      }
+    },
+    {
+      "id": 7,
+      "name": "Jaswant Yadav",
+      "email": "jasyad@rajput.com",
+      "company": {
+        "name": "IIT-K"
+      }
+    },
+    {
+      "id": 8,
+      "name": "Kishore Rawat",
+      "email": "kisraw@rajput.com",
+      "company": {
+        "name": "HappyEasyGo"
+      }
+    },
+    {
+      "id": 9,
+      "name": "Abhay Kumar",
+      "email": "abhkum@rajput.com",
+      "company": {
+        "name": "RanSom"
+      }
+    },
+    {
+      "id": 10,
+      "name": "Angad Mishra",
+      "email": "angmis@rajput.com",
+      "company": {
+        "name": "CA"
+      }
+    }
+  ]

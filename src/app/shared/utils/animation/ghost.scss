@@ -1,0 +1,47 @@
+@import './ghost-pulse.scss';
+
+$ghost-row-gap: (15 - 3) px;
+
+.ghost {
+  overflow: hidden;
+  margin-bottom: -6px;
+
+  .avatar {
+    background-color: rgba(221, 221, 221, 0.514); 
+    border: solid 2px rgba(212, 212, 212, 0.616);
+    border-radius: 50%;  
+    background-size: 50px 50px; 
+    cursor: auto;
+    @include avatar-pulse;
+  }
+
+
+  .lines { 
+
+     margin-block-end: $ghost-row-gap; 
+     
+    h2, h3, p{
+      
+      background-color: rgba(235, 235, 235, 0.514);
+      border-bottom: 2px solid white;
+      border-radius: 4px 4px 4px 4px;
+      @include background-pulse;
+      
+
+
+
+    }
+
+    h2 {
+      width: 50%;
+    }
+
+    h3 {
+      width: 85%; 
+    }  
+
+    p {
+      width: 70%;      
+    }
+  }
+}

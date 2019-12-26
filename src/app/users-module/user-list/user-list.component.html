@@ -1,0 +1,27 @@
+<mat-toolbar>
+    <mat-toolbar-row fxLayout fxLayoutAlign="start center" fxLayoutGap="25px">
+     <p>Profiles </p>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <div class="content"> 
+
+    <div *ngIf='userslist | async as userslist' [@fadeIn]="userslist.length"  fxLayout="row wrap" class="list">
+      <div *ngFor='let user of userslist; trackBy: trackByFn'
+           [class.ghost]="state(user).isLoading"  
+           [class.user]="state(user).isLoaded"                 
+           fxFlex="50" fxFlex.xs="100">
+              <div class="avatar" (click)="service.refreshUser(user)">
+                <svg-icon [icon]="user.data?.avatar" *ngIf="!state(user).isPolling"></svg-icon> 
+                <div class="spinner-block" *ngIf="state(user).isPolling">
+                  <div class="spinner spinner-2"></div>
+                </div>
+              </div>
+              <div class="lines" [class.polling]="state(user).isPolling" >
+                <h2>{{user.data?.name}}</h2>
+                <h3>{{user.data?.email}}</h3>
+                <p><span class="company" *ngIf="user.data">Company:</span> {{user.data?.company.name}}</p> 
+              </div>
+      </div> 
+    </div>
+  
+  </div>
