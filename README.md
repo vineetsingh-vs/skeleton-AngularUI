@@ -1,6 +1,6 @@
 # GhostUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
+This project targets to display skeleton/ghost effect while loading page. With async data loading , partial loading of component is displayed to showcase the skeleton effect. Mocking api call with latency in response has been mocked in this project 
 
 ## Development server
 
